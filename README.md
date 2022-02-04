@@ -29,7 +29,7 @@ Code to decrypt:
 ```php
   SED::decryption("texto encriptado")
 ```
-# Ejemplo
+# Ejemplo | Example
 A continuacion vamos a encriptar un nombre y guardarlo en una variable:
 Next we are going to encrypt a name and save it in a variable:
 ```php
