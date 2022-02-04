@@ -9,9 +9,9 @@ In order to use this API / Module we must include it in our code:
 ```php
   require_once "sed.php";
 ```
-Luego hay que configurar las claves privadas (recuerda guardarlas bien ya que perderas todo lo encriptado sino)
+En el archivo hay que configurar las claves privadas (recuerda guardarlas bien ya que perderas todo lo encriptado sino)
 
-Then you have to configure the private keys (remember to save them well since you will lose everything encrypted otherwise)
+In the file you have to configure the private keys (remember to save them well since you will lose everything encrypted otherwise)
 ```php
   // puedes generarlas en el siguiente link:
   // https://www.lastpass.com/es/features/password-generator
