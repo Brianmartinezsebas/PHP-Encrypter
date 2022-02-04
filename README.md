@@ -1,11 +1,11 @@
 # PHP-Encripter
-Esta es una API/Modulo para poder encriptar/desencriptar datos, textos con el metodo de encriptado "AES-256-CBC" (SHA256)
+Esta es una API para poder encriptar/desencriptar datos, textos con el metodo de encriptado "AES-256-CBC" (SHA256)
 
-This is an API/Module to be able to encrypt/decrypt data, texts with the encryption method "AES-256-CBC" (SHA256)
+This is an API to be able to encrypt/decrypt data, texts with the encryption method "AES-256-CBC" (SHA256)
 # Integracion | Integration
-Para poder usar esta API/Modulo debemos incluirla en nuestro codigo:
+Para poder usar esta API debemos incluirla en nuestro codigo:
 
-In order to use this API / Module we must include it in our code:
+In order to use this API we must include it in our code:
 ```php
   require_once "sed.php";
 ```
