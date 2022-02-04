@@ -15,8 +15,8 @@ In the file (sed.php) you have to configure the private keys (remember to save t
 ```php
   // puedes generarlas en el siguiente link:
   // https://www.lastpass.com/es/features/password-generator
-  $SECRET_KEY = "yZMX%5uNBYj^EehuGvH#l5%zxBEhH0&2";// esta clave puede contener mayusculas, minusculas, numeros y simbolos
-  $SECRET_IV = "23006541971613219213028680229858";// en esa solo se pueden numeros
+  private $SECRET_KEY = "yZMX%5uNBYj^EehuGvH#l5%zxBEhH0&2"; // esta clave puede contener mayusculas, minusculas, numeros y simbolos
+  private $SECRET_IV = "23006541971613219213028680229858"; // en esa solo se pueden numeros
 ```
 Para encriptar / desencriptar usaremos los siguientes parametros:
 
@@ -26,28 +26,31 @@ Codigo para encriptar:
 
 Code to encrypt:
 ```php
-  SED::encryption("texto sin encriptar")
+  $SED = new SED(); //recuerda siempre inicializar
+  $SED->encryption("texto sin encriptar")
 ```
 
 Codigo para desencriptar:
 
 Code to decrypt:
 ```php
-  SED::decryption("texto encriptado")
+  $SED = new SED(); //recuerda siempre inicializar
+  $SED->decryption("texto encriptado")
 ```
 # Ejemplo | Example
 A continuacion vamos a encriptar un nombre y guardarlo en una variable:
 
 Next we are going to encrypt a name and save it in a variable:
 ```php
-    $name = SED::encryption("Brian Sebastian Martinez"); //encriptamos texto, tambien se pueden variables
+    $SED = new SED(); //recuerda siempre inicializar
+    $name = SED->encryption("Brian Sebastian Martinez"); //encriptamos texto, tambien se pueden variables
     // se generara un texto unico, $name devuelve = "bGt0V1pXZGZKdDB1cCtndWphSUpLVjZXQ2FoYVZ4eWtZUTl1SUJNSGZscz0="
   ```
 Ahora desencriptaremos la variable:
 
 Now we will decrypt the variable:
 ```php
-  echo SED::decryption($name);
+  echo $SED->decryption($name);
 ```
 	
   
