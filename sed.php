@@ -17,9 +17,7 @@
 		}
 		public function encryption($string){
 		    $this->fol();
-		    $this->output = FALSE;
-		    $this->output = openssl_encrypt($string, $this->METHOD, $this->key, 0, $this->iv);
-		    $this->output = base64_encode($this->output);
+		    $this->output = base64_encode(openssl_encrypt($string, $this->METHOD, $this->key, 0, $this->iv));
 		    return $this->output;
 		}
 		public function decryption($string){
