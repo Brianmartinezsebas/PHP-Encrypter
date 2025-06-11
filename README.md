@@ -16,7 +16,6 @@ In the file (sed.php) you have to configure the private keys (remember to save t
   // Puedes generarlas en el siguiente link:
   // https://www.lastpass.com/es/features/password-generator
   private $SECRET_KEY = "yZMX%5uNBYj^EehuGvH#l5%zxBEhH0&2"; // Esta clave puede contener mayúsculas, minúsculas, números y símbolos
-  private $SECRET_IV = "23006541971613219213028680229858"; // En esa solo se pueden números
 ```
 Para encriptar / desencriptar usaremos los siguientes parámetros:
 
